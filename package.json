@@ -17,7 +17,7 @@
   "scripts": {
     "pretest": "npm run build",
     "test": "karma start karma.conf.js",
-    "build": "rm -rf build && ngc -p ./tsconfig.publish.json",
+    "build": "ngc -p ./tsconfig.publish.json",
     "prepublish": "typings install && npm run build"
   },
   "author": "Konstantin Skipor",
@@ -29,7 +29,7 @@
     "reflect-metadata": "^0.2.1",
     "rxjs": "7.8.1",
     "d3": "^7.8.5",
-    "nvd3": "^1.8.6"
+    "nvd3": "git+https://github.com/homodeus06/nvd3-v17"
   },
   "devDependencies": {
     "@angular/common": "^17.0",
@@ -51,7 +51,7 @@
     "karma-sourcemap-loader": "^0.4.0",
     "karma-webpack": "^5.0.0",
     "ts-loader": "^9.5",
-    "typescript": "5.3.3",
+    "typescript": "^5.2.2",
     "typings": "^2.1.0",
     "webpack": "^5.89.0",
     "zone.js": "^0.14.3"

@@ -1,6 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.NvD3Component = void 0;
 var core_1 = require("@angular/core");
+var i0 = require("@angular/core");
 var NvD3Component = (function () {
     function NvD3Component(elementRef) {
         this.el = elementRef.nativeElement;
@@ -213,19 +215,20 @@ var NvD3Component = (function () {
             this.chart.resizeHandler.clear();
         this.chart = null;
     };
+    NvD3Component.ɵfac = function NvD3Component_Factory(t) { return new (t || NvD3Component)(i0.ɵɵdirectiveInject(i0.ElementRef)); };
+    NvD3Component.ɵcmp = i0.ɵɵdefineComponent({ type: NvD3Component, selectors: [["nvd3"]], inputs: { options: "options", data: "data" }, features: [i0.ɵɵNgOnChangesFeature], decls: 0, vars: 0, template: function NvD3Component_Template(rf, ctx) { }, encapsulation: 2 });
     return NvD3Component;
 }());
-NvD3Component.decorators = [
-    { type: core_1.Component, args: [{
+exports.NvD3Component = NvD3Component;
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(NvD3Component, [{
+        type: core_1.Component,
+        args: [{
                 selector: 'nvd3',
                 template: ""
-            },] },
-];
-NvD3Component.ctorParameters = function () { return [
-    { type: core_1.ElementRef, },
-]; };
-NvD3Component.propDecorators = {
-    'options': [{ type: core_1.Input },],
-    'data': [{ type: core_1.Input },],
-};
-exports.NvD3Component = NvD3Component;
+            }]
+    }], function () { return [{ type: i0.ElementRef }]; }, { options: [{
+            type: core_1.Input
+        }], data: [{
+            type: core_1.Input
+        }] }); })();
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassDebugInfo(NvD3Component, { className: "NvD3Component", filePath: "lib\\ng2-nvd3.component.ts", lineNumber: 9 }); })();
